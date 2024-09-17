@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 # Sample text
-text = "The quick brown fox jumps over the lazy dog. The dog barked loudly."
+text = "Mary had a little lamb, Its fleece was white as snow; and everywhere that Mary went, the lamb was sure to go."
 
 # Tokenize the text into words (simple splitting and lowercasing)
 words = text.lower().replace('.', '').split()
@@ -41,6 +41,6 @@ current_word = 'the'
 next_word = predict_next_word(current_word)
 print(f"The next word after '{current_word}' is likely to be '{next_word}'.")
 
-current_word = 'dog'
+current_word = 'Mary'
 next_word = predict_next_word(current_word)
 print(f"The next word after '{current_word}' is likely to be '{next_word}'.")
